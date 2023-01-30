@@ -9,7 +9,7 @@ img = np.asarray(img, dtype=np.float32)/255
 img = img.reshape(1, 75, 100, 3)
 
 # Load the TFLite model and allocate tensors.
-interpreter = tf.lite.Interpreter(model_path="model.tflite")
+interpreter = tf.lite.Interpreter(model_path="model_3.tflite")
 interpreter.allocate_tensors()
 
 # Get input and output tensors.
